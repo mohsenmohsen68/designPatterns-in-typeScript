@@ -1,4 +1,10 @@
-import { chairFactory } from "./factoryPattern/chairFactoryUseCase/chairFactoryClass";
+import { abstractFactory } from "./factoryPattern/abstractFactory";
+import { tableFactory } from "./factoryPattern/tableFactory.ts/tableFactory";
 
-const size = chairFactory.createChair("large")
-console.log("chair size is : ",size)
+
+const obj = abstractFactory.createObj("largeTable")
+console.log('the obj is : ', oo);
+
+// const oo = tableFactory.createObj("smallTable")
+// console.log(oo?.print())
+
